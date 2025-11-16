@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox test</title>
+</head>
+<body>
+    <header>Homem ou mulher</header>
+    <main>
+        <input type="radio" name="gender" id="masc" >
+        <label for="masc">Masculino</label>
+        <input type="radio" name="gender" id="fem">
+        <label for="fem">Feminino</label>
+        <br>
+        <br>
+        <br>
+        <input id="button" type="button" value="Verificar" onclick="clicar()">
+        <p id="p"></p>
+    </main>
+    <script>
+        function clicar() {
+            var button = document.getElementById('button')
+            var p = document.getElementById('p')
+            var gender = document.getElementsByName('gender')
+            if (gender[0].checked) {
+                p.innerHTML = 'Homem'
+            } else if (gender[1].checked) {
+                p.innerText = 'Mulher'
+            }
+            
+        }
+    </script>
+</body>
+</html>

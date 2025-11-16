@@ -1,0 +1,42 @@
+body {
+    background-color: cornflowerblue;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+main {
+
+    background-color: white;
+    height: fit-content;
+    max-width: 450px;
+    min-width: fit-content;
+    margin: auto;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493) ;
+}
+
+p#resposta {
+    text-align: center;
+}
+
+section#imagem {
+    display: none;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 150px;
+    margin: auto;
+    background-size: cover;
+}
+

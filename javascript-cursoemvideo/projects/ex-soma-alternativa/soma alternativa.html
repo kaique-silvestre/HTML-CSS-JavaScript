@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma alternativa</title>
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                <input type="number" name="n1" id="n1">
+                <input type="number" name="n2" id="n2">
+                <input type="button" value="Somar" id="sum">
+            </p>
+        </section>
+        <section>
+            <p id="Resultado"></p>
+        </section>
+    </main>
+
+    <script>
+           var button = document.getElementById('sum')
+           button.addEventListener('click', somar)
+
+        function somar() {
+        
+            var n1 = Number(document.getElementById("n1").value)
+            var n2 = Number(document.getElementById('n2').value)
+            var result = document.getElementById('resultado')
+            var s = n1 + n2 
+            result.innerHTML = s 
+
+        }
+    </script>
+    
+</body>
+</html>

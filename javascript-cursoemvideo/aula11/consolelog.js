@@ -1,0 +1,1 @@
+console.log('Meu primeiro texto no console')

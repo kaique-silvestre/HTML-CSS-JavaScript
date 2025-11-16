@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+    <style>
+
+        body {
+            margin: 0px;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgb(69, 200, 176), rgb(103, 23, 153));
+            background-repeat: no-repeat;
+        }
+
+        main {
+            background-color: white;
+            border: solid black 1px;
+            border-radius: 10px;
+            padding: 2%;
+            width: fit-content;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Verificador de Estrangeiros</h1>
+        <div>
+            <p>Informe o seu pais de origem: <input type="text" name="pais" id="pais"><input id="b1" type="button" value="Verificar" onclick="Verificador()"></p>
+        </div>
+        <div>
+            <p id="result">Bem-Vindo</p>
+        </div>
+    </main>
+    <script>
+        function Verificador() {
+            var pais = document.getElementById('pais').value
+            var resultado = document.getElementById('result')
+            
+            if (pais == 'Brasil') {
+                resultado.innerText = ' Bem-Vindo, Indentificamos que Você é Brasileiro'
+            } else {
+                resultado.innerText = ' Bem-Vindo, Indentificamos que Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

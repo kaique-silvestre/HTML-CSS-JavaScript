@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            height: 97vh;
+            background-image: linear-gradient(145deg, rgb(0, 255, 21), rgb(131, 4, 251));
+
+        }
+        main {
+            background-color: white;
+            padding: 3%;
+            border: solid 1px black;
+            border-radius: 10px;
+            width: fit-content;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somador de Números</h1>
+        <section>
+            <p>    
+                <input type="number" name="n1" id="n1">
+                +
+                <input type="number" name="n2" id="n2">
+                <input type="button" value="Somar" onclick="somador()">
+            </p>
+
+        </section>
+        <section>
+            <p id="resultado"></p>
+        </section>
+    </main>
+    <script>
+        function somador() {
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            var result = document.getElementById('resultado')
+            var v1 = n1 + n2 
+            result.innerText = v1
+        }
+
+    </script>
+    
+</body>
+</html>

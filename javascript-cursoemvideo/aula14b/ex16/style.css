@@ -1,0 +1,55 @@
+:root {
+    --MainGray: rgba(255, 255, 255, 0.479);
+    --ButtonGray: rgb(177, 173, 173);
+    --DataGray: rgb(226, 221, 221);
+}
+
+
+body {
+    color: white;
+    background-image: url('imagens/5fQUPDl.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main {
+    color: black;
+    background-color: var(--MainGray);
+    font-size: 1.1em;
+    height: fit-content;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.dados, #button {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.dados:focus {
+    background-color: var(--DataGray);
+}
+
+.dados:hover {
+    background-color: var(--DataGray);
+}
+ 
+#button {
+    font-size: 0.9em;
+}
+
+input#button:hover {
+    background-color: var(--ButtonGray);
+}
+

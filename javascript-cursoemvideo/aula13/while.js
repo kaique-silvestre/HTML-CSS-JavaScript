@@ -1,0 +1,7 @@
+var cont = 0
+while (cont < 10) {
+    
+    console.log(`Passo ${cont}`)
+    cont++
+}
+console.log(cont)
